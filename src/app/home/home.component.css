@@ -1,23 +1,435 @@
 .homePage{
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  /* height: auto; */
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-perspective: 800px;
 }
 #myCarousel{
-  /* border: 2px solid red; */
+  /* border: 2px solid green;  */
+  /* padding-top: 10px; */
   width: 100%;
-  height: 83.5%;
-  min-height: 500px;
+  height: 100%;
+  /* min-height: 500px; */
 }
 .carousel-inner{
+  /* border: 2px solid blue; */
   height: 100%;
 }
 .item{
   height: 100%;
+  /* border: 2px solid green; */
 }
 .active{
   height: 100%;
+  /* border: 2px solid red; */
 }
+.carouselImg{
+  /* border: 2px solid blue; */
+  height: 100%;
+}
+
 img{
-  /* border: 1px solid transparent; */
+  /* border: 2px solid yellow; */
+  /* height: 100%; */
+  /* border: 2px solid red; 
+  width: 100%; */
+  /* height: 99%; */
+  /* min-height: 99%; */
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+  height: 100%;
   width: 100%;
-  min-height:100%;
+}
+.welcomeDiv{
+  /* border: 1px solid red; */
+  width: 100%;
+  padding-top: 40px;
+}
+.welcomeContentContainer{
+  /* border: 1px solid blue; */
+  width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.welcomeHeading{
+  color: #0288d1;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-bottom: 40px;
+}
+.welcomeContentContainer p {
+  /* border: 1px solid red; */
+  font-family: sans-serif;
+  /* font-family: 'Lato';
+  text-align: justify; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #363b3f;
+}
+.transformingDivContainer{
+  /* border: 2px solid green; */
+  height: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.transformingDiv{
+  /* border: 1px solid blue; */
+  height: 200px;
+  width: 17%;
+  margin-top: 40px;
+  margin-right: 40px;
+  transition: -webkit-transform 0.5s ease-in;
+  -webkit-transform-style: preserve-3d;
+}
+.transformingDiv div{
+  /* position: absolute; */
+  -webkit-backface-visibility: hidden;
+}
+.side-a{
+  position: absolute;
+  height: 100%;
+  background: rgb(239, 239, 239);
+  border-radius: 15px;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  vertical-align: middle;
+}
+.side-b{
+  height: 100%;
+  background: rgb(239, 239, 239);
+  -webkit-transform: rotateY(-180deg);
+  border-radius: 15px;
+}
+.transformingDiv:hover{
+  -webkit-transform: rotateY(180deg);
+}
+.container{
+  /* border: 1px solid black; */
+  width: 80%;
+  height: 80%;
+  margin-top: 20px;
+  /* display: flex;
+  vertical-align: middle; */
+}
+.imgDiv{
+  border: 1px solid black;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  /* background: #0187cc; */
+  height: 50%;
+  width: 75px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.imgDiv1{
+  background: linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+}
+.imgDiv2{
+  background: linear-gradient(45deg, #ff6f00 0%, #ffca28 100%);
+}
+.imgDiv3{
+  background: linear-gradient(45deg, #43A047 0%, #1de9b6 100%);
+}
+/* .imgDiv1{
+  border: 1px solid black;
+  border-radius: 50%;
+  background: #0187cc;
+  height: 50%;
+  width: 75px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+} */
+.image{
+  height: 40%;
+  margin: auto;
+}
+.textDiv{
+  /* border: 1px solid red; */
+  height: 40%;
+  width: 100%;
+  padding-top: 25px;
+  /* padding-left: 30px; */
+  display: flex;
+  justify-content: center;
+}
+h4{
+  color: #333333;
+}
+/* side b Divs */
+
+.mainContent{
+  /* border: 1px solid; */
+  height: 60%;
+  text-align: center;
+  padding-top: 35px;
+}
+.buttonDiv{
+  /* border: 1px solid red; */
+  height: 40%;
+  display: flex;
+}
+.button{
+  height: 55%;
+  width: 60%;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 0px;
+  /* justify-content: center;
+  text-align: center; */
+}
+.lowerBody{
+  /* border: 2px solid red; */
+}
+.admissionFormContainer{
+  /* border: 1px solid red; */
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(45deg, #0288d1 0%, #26c6da 100%);
+  margin-bottom: 40px;
+}
+.admissionFormContentContainer{
+  /* border: 2px solid blue; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.admissionFormText{
+  /* border: 1px solid; */
+  height: 50px;
+  width: 60%;
+  /* padding-left: 20px; */
+  text-align: center;
+  padding-top: 10px;
+}
+.interestedHeading{
+  color: white;
+}
+.admissionFormButton{
+  /* border: 1px solid; */
+  height: 50px;
+  width: 30%;
+}
+.downloadButton{
+  border: 2px solid white;
+  height: 40px;
+  margin-top: 5px;
+  width: 200px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  padding-top: 3px;
+}
+.downloadButton:hover{
+  color: #0288d1;
+  /* box-shadow: 0 0 0 2px #fff inset; */
+  background: white;
+  font-weight: bold;
+  font-size: 14px;
+  /* box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.6); */
+}
+.makPicturesContainer{
+  /* border: 1px solid blue; */
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.row1{
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.row2{
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.pictureDiv{
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 20%;
+}
+.schoolImage{
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+}
+
+
+/*       Media Queries           */
+/******************************** */
+
+@media screen and (max-width: 900px) {
+  .interestedHeading{
+    /* border: 1px solid; */
+    color: white;
+    margin-top: -8px; 
+  }
+  .transformingDivContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .transformingDiv{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .side-b{
+    width: 100%;
+  }
+  .lowerBody{
+    border: 2px solid red;
+    margin-top: 620px;
+    height: auto;
+  }
+  /* .makPicturesContainer{
+    display: block;
+  } */
+  .row1{
+    border: 2px solid green;
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  .pictureDiv{
+    border: 2px solid yellow;
+    /* height: 100%; */
+    width: 40%;
+    display: flex;
+  }
+  .row2{
+    border: 2px solid black;
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+}
+@media screen and (max-width: 700px) {
+  .admissionFormContentContainer{
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+  }
+  .downloadButton{
+    border: 2px solid white;
+    height: 40px;
+    margin-top: 5px;
+    width: 140px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+  }
+  .interestedHeading{
+    /* border: 1px solid; */
+    color: white;
+    margin-top: -12px; 
+  }
+  .pictureDiv{
+    border: 2px solid yellow;
+    /* height: 100%; */
+    width: 45%;
+    display: flex;
+  }
+  .div3{
+    border: 2px solid red;
+    display: none;
+  }
+  .div4{
+    border: 2px solid red;
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .admissionFormText{
+    /* border: 1px solid; */
+    height: 50px;
+    width: 50%;
+    /* padding-left: 20px; */
+    text-align: center;
+    padding-top: 10px;
+  }
+  .downloadButton{
+    border: 2px solid white;
+    height: 40px;
+    margin-top: 5px;
+    width: 120px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .interestedHeading{
+    /* border: 1px solid; */
+    color: white;
+    margin-top: -6px; 
+    font-size: 20px;
+  }
+  .pictureDiv{
+    border: 2px solid rebeccapurple;
+    /* height: 100%; */
+    width: 50%;
+    display: flex;
+  }
+  .div3{
+    border: 2px solid red;
+    display: none;
+  }
+  .div4{
+    border: 2px solid red;
+    display: none;
+  }
+}
+@media screen and (max-width: 490px) {
+  .downloadButton{
+    border: 2px solid white;
+    height: 40px;
+    margin-top: 5px;
+    width: 100px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .interestedHeading{
+    /* border: 1px solid; */
+    color: white;
+    margin-top: -6px; 
+    font-size: 16px;
+  }
 }

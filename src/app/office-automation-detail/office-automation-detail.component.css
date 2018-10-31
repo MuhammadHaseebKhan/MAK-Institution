@@ -1,0 +1,135 @@
+.officeAutomationDetailsPage{
+  /* border: 1px solid red; */
+  background: white;
+}
+.content{
+  /* border: 1px solid green; */
+  height: 100%;
+  padding: 20px;
+}
+.officeAutomationDetailsHeading{
+  /* border: 1px solid blue;  */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background: #edf0f2;
+}
+.heading{
+  /* border: 1px solid red; */
+  font-size: 35px;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  font-weight: 400;
+  /* width: 300px; */
+  /* margin: auto; */
+  margin-top: 10px;
+  background: transparent;
+  width: 700px;
+  height: 70px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.table{
+  border: 1px solid #0187cc;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+.ant-table table{
+  text-align: center;
+}
+.ant-table-thead>tr:first-child>th:first-child{
+  border-radius: 10px;
+}
+.ant-table-footer{
+  border: 1px solid red;
+}
+.outlineDetails{
+  border: 1px solid #0187cc;
+  /* padding-left: 30px; */
+  margin-top: 30px;
+}
+h3{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  font-size: 35px;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.outlineContent{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  width: 100%;
+}
+.outlineContentText{
+  /* border: 1px solid red; */
+  width: 50%;
+}
+.outlineContentImage{
+  /* border: 1px solid blue; */
+  /* height: 100%; */
+  width: 50%;
+  padding-top: 100px;
+  margin-right: 30px;
+  /* background-image: url('./../../assets/Office-Automation-Course.jpg');
+  background-repeat: no-repeat; */
+}
+img{
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  width: 100%;
+  height: 60%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .outlineContentImage{
+    display: none;
+  }
+  .outlineContentText{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .heading{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-weight: 400;
+    /* width: 300px; */
+    /* margin: auto; */
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 680px) {
+    .table{
+      border: 1px solid #0187cc;
+      width: 100%;
+      /* margin: auto; */
+      border-radius: 10px;
+      /* padding: 10px; */
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .heading{
+      /* border: 1px solid red; */
+      font-size: 18px;
+      color: #3b3b3b;
+      text-transform: uppercase;
+      font-weight: 400;
+      /* width: 300px; */
+      /* margin: auto; */
+      margin-top: 40px;
+    }
+  }
+}

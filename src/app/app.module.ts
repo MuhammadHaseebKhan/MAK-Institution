@@ -12,6 +12,9 @@ import zh from '@angular/common/locales/zh';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { WhyMakComponent } from './why-mak/why-mak.component';
+import { CertificateCoursesComponent } from './certificate-courses/certificate-courses.component';
+import { OfficeAutomationDetailComponent } from './office-automation-detail/office-automation-detail.component';
+import { CeoComponent } from './ceo/ceo.component';
 
 registerLocaleData(zh);
 
@@ -21,7 +24,10 @@ registerLocaleData(zh);
     routingComponents,
     AboutUsComponent,
     HomeComponent,
-    WhyMakComponent
+    WhyMakComponent,
+    CertificateCoursesComponent,
+    OfficeAutomationDetailComponent,
+    CeoComponent
   ],
   imports: [
     BrowserModule,

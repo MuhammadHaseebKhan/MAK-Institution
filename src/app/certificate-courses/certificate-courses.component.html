@@ -1,0 +1,50 @@
+<div class="certificateCoursesPage">
+  <!-- <h3>Office Automation</h3>
+  <h3> Professional Microsoft Office 2016 </h3>
+  <h3>Basic C.I.T </h3>
+  <h3>HARDWARE AND SOFTWARE  </h3>
+  <h3>AutoCAD 2D & 3D  </h3>
+  <h3>Advanced Architecture   </h3>
+  <h3>Architectural Visualization  </h3>
+  <h3>Computerized Accounting  </h3>
+  <h3>Advanced Excel </h3>
+  <h3>Quick Book   </h3>
+  <h3>C Language  </h3>
+  <h3>C Language  </h3>
+  <h3>C Language  </h3>
+  <h3>C Language  </h3>
+  <h3>C Language  </h3> -->
+  <nz-list [nzHeader]="'Certificate Courses'" [nzDataSource]="data" [nzRenderItem]="item" [nzItemLayout]="'horizontal'">
+    <ng-template #item let-item>
+      <nz-list-item [nzActions]="item.loading?[]:[editAction,moreAction]">
+        <nz-list-item-meta
+          [nzTitle]="nzTitle"
+          nzAvatar="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+          nzDescription="Ant Design, a design language for background applications, is refined by Ant UED Team">
+          <!-- <div class="description">
+            <p>hello world slmdlasdnosdnls</p>
+          </div> -->
+          <ng-template #nzTitle>
+            <a routerLink="/officeautomationdetails">{{item.one}}</a>
+            <a href="https://ng.ant.design">{{item.two}}</a>
+            <a href="https://ng.ant.design">{{item.three}}</a>
+            <a href="https://ng.ant.design">{{item.four}}</a>
+            <a href="https://ng.ant.design">{{item.five}}</a>
+            <a href="https://ng.ant.design">{{item.six}}</a>
+            <a href="https://ng.ant.design">{{item.seven}}</a>
+            <a href="https://ng.ant.design">{{item.eight}}</a>
+            <a href="https://ng.ant.design">{{item.nine}}</a>
+            <a href="https://ng.ant.design">{{item.ten}}</a>
+            <a href="https://ng.ant.design">{{item.eleven}}</a>
+          </ng-template>
+        </nz-list-item-meta>
+        <!-- <div class="description">
+            <p>helloworld</p>
+        </div> -->
+          <!-- <ng-template #editAction><a>edit</a></ng-template> -->
+          <ng-template #moreAction><a>more details</a></ng-template>
+      </nz-list-item>
+
+    </ng-template>
+  </nz-list>
+</div>

@@ -1,11 +1,12 @@
 .rootPage{
-  border: 2px solid white;
+  /* border: 2px solid black; */
   box-sizing: border-box;
-  height: 100vh;
+  height: auto;
   min-height: 100%;
   width: 100%;
 }
 .companyLogo{
+  display: flex;
   border: 1px solid #0187cc;
   height: 70px;
   width: 100%;
@@ -17,20 +18,27 @@
 }
 .makLogo h1{
   /* border: 1px solid red; */
-  width: 400px;
+  /* width: 400px; */
   margin-left: 20px;
   margin-top: 10px;
   color: white;
 }
 .navigation{
-  border: 0px solid purple;
-  height: 52px;
+  border: 1px solid purple;
+  height: auto;
+  min-height: 52px;
   width: 100%;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 .menu{
   /* border: 1px solid red; */
-  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
+  /* width: 60%; */
+  /* margin-left: auto; */
+}
+.menu li:first-child {
   margin-left: auto;
 }
 
@@ -59,4 +67,21 @@ img{
 }
 .affixx{
   /* border: 1px solid red; */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 790px) {
+  .menu{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* width: 60%; */
+    /* margin-left: auto; */
+  }
+  .menu li:first-child {
+    margin-left: 0px;
+  }
+
 }

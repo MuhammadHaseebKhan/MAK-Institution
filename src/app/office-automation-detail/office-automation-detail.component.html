@@ -1,0 +1,83 @@
+<div class="officeAutomationDetailsPage">
+  <div class="officeAutomationDetailsHeading"> 
+    <h2 class="heading">Office Automation Course Details</h2>
+  </div>
+  <div class="content">
+    <div class="table">
+      <nz-table #basicTable [nzData]="dataSet" [nzFooter]="'Duration - 3 Months'">
+          <thead>
+            <tr>
+              <th>Days</th>
+              <th>Class Timings</th>
+              <!-- <th>Address</th>
+              <th>Action</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of basicTable.data">
+              <td>{{data.name}}</td>
+              <td>{{data.age}}</td>
+              <!-- <td>{{data.address}}</td>
+              <td>
+                <a>Action 一 {{data.name}}</a>
+                <nz-divider nzType="vertical"></nz-divider>
+                <a>Delete</a>
+              </td> -->
+            </tr>
+          </tbody>
+        </nz-table>
+    </div>
+    <div class="outlineDetails">
+      <h3>Outline</h3>
+      <div class="outlineContent">
+        <div class="outlineContentText">
+          <h4>INFORMATION TECHNOLOGY</h4>
+          <ul>
+            <li>What is Information Technology Input / Output and Storage Devices </li>
+            <li>What is Computer Using Input Devices?  </li>
+            <li>History of Computer Using Output Devices  </li>
+            <li>Computer Memory  </li>
+            <li>Data and Storage Devices  </li>
+          </ul>
+          <h4>COMPUTER HARDWARE AND SOFTWARE</h4>
+          <ul>
+            <li>What is Hardware? </li>
+            <li>Software and Types </li>
+          </ul>
+          <h4>INTRODUCTION TO WINDOWS 8</h4>
+          <ul>
+            <li>What is Operating System ACCESSING THE START MENU </li>
+            <li>Windows History Using Start Menu Option</li>
+            <li>Windows Environment Customizing the Start Menu </li>
+            <li>A First Look at the Windows Desktop Finding Programs, Files & Settings </li>
+            <li>Windows Taskbar </li>
+          </ul>
+          <h4>CUSTOMIZING THE WINDOWS DESKTOP </h4>
+          <ul>
+            <li>Using Icons & Shortcuts </li>
+            <li>Customizing Backgrounds & Window Appearance</li>
+            <li>Customizing Screensavers & Icons</li>
+            <li>Changing Screen Resolution </li>
+            <li>MS OFFICE</li>
+          </ul>
+          <h4>INTRODUCTION TO INTERNET </h4>
+          <ul>
+            <li>What is Internet? </li>
+            <li>Advantages of Internet </li>
+            <li>World Wide Web </li>
+          </ul>
+          <h4>E-MAIL SYSTEM AND ITS WORKING</h4>
+          <ul>
+            <li>E-Mail Registration </li>
+            <li>Check a Mail </li>
+            <li>Compose a Mail </li>
+            <li>Attachments </li>
+          </ul>
+        </div>   
+        <div class="outlineContentImage">
+          <img src="../../assets/Office-Automation-Course.jpg">
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>

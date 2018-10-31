@@ -1,2 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css';
+
+/* Certificate Courses Table Header Style */
+.ant-list-split .ant-list-header{
+  /* border: 1px solid #0187cc; */
+  /* border-radius: 10px; */
+  height: 60px;
+  text-align: center;
+  font-size: 2em;
+  /* background: #0187cc; */
+}
+
+.ant-table table{
+  text-align: center;
+}
+
+.ant-table-thead>tr:first-child>th:first-child{
+  border-radius: 10px;
+  text-align: center;
+  /* background: #edf0f2; */
+}
+.ant-table-thead>tr:first-child>th:last-child{
+  border-radius: 10px;
+  text-align: center;
+  /* background: #edf0f2; */
+}
+.ant-table-pagination.ant-pagination{
+  /* border: 1px solid red; */
+  display: none;
+}
+.ant-table-footer{
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
